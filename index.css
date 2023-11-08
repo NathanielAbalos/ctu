@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2189d8;
+    position: fixed;
+    width: 100%;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+header nav a:hover{
+    color: rgb(207, 204, 204);
+}
+header img{
+    height: 45px;
+}
+.hamburger{
+    display: none;
+}
+
+.body{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url('ctuScholarhipbg.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    margin-top: 70px;
+    height: 90vh;
+    width: 100%;
+}
+.body h1{
+    font-size: 70px;
+}
+.intro .image{
+    overflow: hidden;
+    height: 500px;
+    background: url('ctuBuildingbg.jpg');
+    width: 70%;
+    background-size: cover;
+    background-position: bottom center;
+    margin: 0 auto;
+}
+footer .socialLinks a{
+    color: white;
+    margin:0px 10px 10px 10px;
+    display:inline-block;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    transition: all 0.3s ease;
+}
+footer .socialLinks a:hover{
+    background-color: black;
+}
+@media(max-width: 950px){
+    #logoText{
+        display: none;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 70px;
+        background-color: #2189d8;
+        left: -100%;
+        transition: all 0.5s ease;
+    }
+    nav.show{
+        left: 0;
+    }
+    .hamburger{
+        display: block;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+    .bun{
+        transition: all 0.5s ease;
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: aqua;
+        margin: 5px auto;
+    }
+    .hamburger.active :nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active :nth-child(1){
+        transform: translateY(8px) rotate(405deg);
+    }
+    .hamburger.active :nth-child(3){
+        transform: translateY(-8px) rotate(315deg);
+    }
+    .body{
+        height: 50vh;
+    }
+    .body h1{
+        font-size: 30px;
+    }
+    .intro .image{
+        height: 200px;
+        width: 100%;
+    }
+}
