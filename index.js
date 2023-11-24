@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
             posts.forEach((post) => {
                 const updateDiv=document.createElement("div");
-                updateDiv.style="margin-bottom: 60px; border-bottom: 2px solid grey; padding-bottom: 15px;";
+                updateDiv.style="margin-bottom: 60px; border-bottom: 2px solid grey; padding-bottom: 15px; min-height: 360px;";
                 //updateDiv.innerHTML= post.message;
                 let postContent;
                 if(post.message){

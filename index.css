@@ -10,6 +10,7 @@ header{
     background-color: #2189d8;
     position: fixed;
     width: 100%;
+    padding-right: 70px;
     z-index: 100;
 }
 header a{
@@ -68,12 +69,17 @@ footer .socialLinks a:hover{
     #logoText{
         display: none;
     }
+    header{
+        padding-right: 0;
+    }
     nav{
         position: fixed;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: start;
+        gap: 20px;
         top: 70px;
         background-color: #2189d8;
         left: -100%;
@@ -112,6 +118,6 @@ footer .socialLinks a:hover{
     }
     .image{
         height: 200px;
-        width: 100%;
+        width: 80%;
     }
 }
