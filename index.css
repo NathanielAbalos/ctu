@@ -12,14 +12,10 @@ header{
     width: 100%;
     z-index: 100;
 }
-header nav a{
+header a{
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
-}
-header .logoBox a{
-    color: white;
-    text-decoration: none;
 }
 header nav a:hover{
     color: rgb(207, 204, 204);
@@ -42,14 +38,17 @@ header img{
 .body h1{
     font-size: 70px;
 }
-.intro .image{
+.image{
     overflow: hidden;
-    height: 500px;
+    height: 350px;
     background: url('ctuBuildingbg.jpg');
     width: 70%;
     background-size: cover;
     background-position: bottom center;
     margin: 0 auto;
+}
+.card img{
+    height: 200px;
 }
 footer .socialLinks a{
     color: white;
@@ -111,7 +110,7 @@ footer .socialLinks a:hover{
     .body h1{
         font-size: 30px;
     }
-    .intro .image{
+    .image{
         height: 200px;
         width: 100%;
     }
