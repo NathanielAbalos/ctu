@@ -1,5 +1,5 @@
 const chatContainer = document.querySelector(".body");
-    const smartEndpoint = "https://chatapp-401002.wm.r.appspot.com";
+    const smartEndpoint = "https://nabalosserver.000webhostapp.com/your_php_file.php";
     const loadingIndicator = document.createElement("div");
     loadingIndicator.innerHTML="loading...";
     loadingIndicator.style="margin: 15px;";
