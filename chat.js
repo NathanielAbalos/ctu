@@ -69,8 +69,7 @@ const chatContainer = document.querySelector(".body");
         fetch(smartEndpoint, {
             method: "POST",
             headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${susi}`
+            "Content-Type": "application/json"
             },
             body: JSON.stringify(conversation)
         })
