@@ -10,6 +10,90 @@
     <link rel="stylesheet" href="index.css">
     <meta name="google-site-verification" content="9E1kkIH2ng7ZMUJ9f082_bvOIhAOuynGzNkOzJuHoPw" />
     <title>Apply for Scholarships - CTU Main Campus</title>
+    <style>
+        .chatBox{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 73%;
+    border: 2px solid black;
+    background-color: white;
+    position: fixed;
+    right: -350px;
+    bottom:15%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.show{
+    box-shadow: -8px 5px 20px grey;
+    right: 2%;
+}
+.chatBoxHeader{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: #1972b6;
+    color: white;
+    height: 12%;
+    font-size: 20px;
+}
+.chatBox iframe{
+    width: 100%;
+    height: 72%;
+    border: none;
+}
+.textBox{
+    width: 100%;
+    height: 16%;
+    background-color: white;
+    box-shadow: 0px -1px 10px grey;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background: rgba(167, 167, 164, 0.3);
+}
+.sendIcon{
+    cursor: pointer;
+    background-color: grey;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+#chatTextBox{
+    border: none;
+    height: 60%;
+    width: 80%;
+    border-radius: 30px;
+    outline: none;
+    margin-left: 15px;
+    padding: 15px;
+    font-size: 17px;
+}
+.chatIcon{
+    position: fixed;
+    right: 4%;
+    bottom: 4%;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.chatIcon:hover{
+    color: rgb(235, 230, 230);
+}
+    </style>
 </head>
 <body>
     <header>
