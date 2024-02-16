@@ -8,7 +8,7 @@ const rightArrow = document.querySelectorAll(".arrow");
 const announcementDivBox = document.querySelector(".announcementContentBox");
 const accessToken = "EAAXqFT6ABREBO2s3kUr7VBExyRviRDEYKfibSIET8hBkaISnNGvY0YFvbZClrNTSizLTeDwHZBlcDjoXsRJRqsS3gDpQ7gRruRjgZAJOrxcD0POolRDAg2zAZCJHuygAWHJtL9zWAwRfj5aD4gzjR9lD9QrF0qV7suOGbrv4ArYUDXJCTNlgGJSy";
 const pageID="353855911379546";
-const endPoint = `https://graph.facebook.com/v18.0/353855911379546/feed?access_token=${accessToken}`;
+const endPoint = `https://graph.facebook.com/v18.0/353855911379546/feed?limit=5&access_token=${accessToken}`;
 let date = new Date();   
 let updatesCollection=[];
 let updateImages=["update3.jpg", "update4.jpg", "update7.jpg", "ctuScholarshipbg2.jpg", "ctuBuildingbg3.jpg", "ctuMainbg.jpeg","office2.jpg", "ctuGym.jpg"] ;
